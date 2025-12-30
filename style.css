@@ -9,9 +9,7 @@
 
 @font-face {
     font-family: 'NorseBold';
-    src: url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    src: url('./fonts/Norse-Bold.otf') format('opentype');
 }
 
 body {
