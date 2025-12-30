@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-in</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="logo">
+            <div class="logo-container">
+                <img
+                    src="https://raw.githubusercontent.com/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+                <div class="title">ODIN</div>
+            </div>
+        </div>
+        <div class="image">
+            <img
+                src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="credits">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                    href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="form">
+        <div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. Sign up now to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <form action="" method="post">
+            <fieldset class="content">
+                <legend>Lets do this!</legend>
+                <section>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <label for="email-id">EMAIL</label>
+                        <input type="email" id="email-id" name="email-id" required>
+                    </div>
+                    <div>
+                        <label for="phone-no">PHONE NUMBER</label>
+                        <input type="number" id="phone-no" name="phone-no" required>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must be at least 8 characters with 1 uppercase, 1 lowercase and 1 number.">
+                    </div>
+                    <div>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must be at least 8 characters with 1 uppercase, 1 lowercase and 1 number.">
+                    </div>
+                </section>
+            </fieldset>
+            <fieldset class="button">
+                <button type="submit">Create Account</button>
+            </fieldset>
+        </form>
+        <div>
+            Already have an account? <a href="#">Log in</a>
+        </div>
+    </div>
+</body>
+
+</html>
