@@ -54,7 +54,8 @@
                     </div>
                     <div>
                         <label for="phone-no">PHONE NUMBER</label>
-                        <input type="number" id="phone-no" name="phone-no" required>
+                        <input type="number" id="phone-no" name="phone-no" required
+                            min="6000000000" max="9999999999">
                     </div>
                 </section>
                 <section>
@@ -71,6 +72,7 @@
                             title="Must be at least 8 characters with 1 uppercase, 1 lowercase and 1 number.">
                     </div>
                 </section>
+                <div class="pass-error"></div>
             </fieldset>
             <fieldset class="button">
                 <button type="submit">Create Account</button>
@@ -80,6 +82,7 @@
             Already have an account? <a href="#">Log in</a>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -92,7 +92,7 @@ body {
 
 .content {
     width: var(--form-width);
-    padding: 60px 30px 30px 0;
+    padding: 60px 30px 40px 0;
     position: relative;
     background-color: white;
     box-shadow: 0 4px 5px 0.1px grey;
@@ -171,4 +171,16 @@ button:hover{
 }
 #password:invalid, #confirm-password:invalid{
     border-color: red;
+}
+
+fieldset {
+    position: relative;
+}
+.pass-error {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    font-size: calc(var(--text-size));
+    bottom: 0.5rem;
+    left: 2rem;
 }
